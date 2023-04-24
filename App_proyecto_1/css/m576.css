@@ -1,0 +1,192 @@
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    .header {
+        height: 60px;
+        z-index: 5;
+        /* background-color: red; */
+         background-color: rgb(148, 79, 79); 
+    }
+
+    .mov {
+        font-size: 18px;
+        font-weight: 500;
+        color: navy; 
+        display: block;
+        line-height: 65px;
+        margin-left: 70px;
+        position: absolute;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        margin-right: 10px;
+        background-color: #034574;
+        /* background-color: pink; */
+        position: fixed;
+        right: 0;
+        top: 58px;
+        width: 100%;
+        padding: 10px 0;
+        /* height: 120px; */
+        height: 200px;
+        /*calc(100%-30px);*/
+        overflow-y: auto;
+        right: -700px;
+        transition: 0.7s;
+
+    }
+
+    .nav-menu-link {
+        font-size: 18px;
+        line-height: 35px;
+        color: white;
+    }
+
+    .nav-menu-link:hover {
+        background-color: none;
+        transition: 0.5s;
+        color: white;
+    }
+
+    .nav-toggle {
+         color: black; 
+         /* border: 1px solid black;  */
+         border: transparent;
+         border-radius: 3px; 
+        background: none;
+        font-size: 25px;
+        padding: 0 15px;
+        line-height: 58px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-menu__visible {
+        right: -10px;
+    }
+
+
+
+    .site {
+
+        flex-direction: column;
+        margin-right: 8px;
+        /* background-color: #034574; */
+
+        font-size: 12px;
+        position: fixed;
+        right: 0;
+        top: 42px;
+        width: 100%;
+        padding: 20px 0px 10px 0px;
+        height: calc(100%-60px);  
+        overflow-y: auto;
+        right: -10px;
+        transition: 0.4s;
+        display: block;
+        align-items: center;
+
+        text-decoration: none;
+        list-style: none;
+        /* margin-left: 10px; */
+        /* height: 800px;
+        overflow-y: scroll; */
+
+
+    }
+
+
+    /*------------------------------------------*/
+    /*ajuste del formulario de nuevo sitio------*/
+    /*------------------------------------------*/
+    .control {
+        /* background-color: #daa52099; */
+        justify-content: center;
+        display: block;
+        flex-direction: column;
+        margin-top: 55px;
+        width: 100%;
+        /*height: auto;*/
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+
+    .config_form {
+        display: flex;
+        flex-direction: column;
+
+        width: 96%;
+        margin-left: 51%;
+        transform: translateX(-4%);
+        top: 65px;
+        left: 1px;
+        right: 1px; 
+        background-color: rgba(218, 165, 32, 0.3);
+
+        align-items: center;
+        border: red solid 2px;
+        margin-left: 6%;
+        position: absolute;
+    }
+
+
+
+
+    /* background-color: rgba(218, 165, 32, 0.3);
+    /* height: auto;  */
+    /* min-height: 400px; */
+    /*justify-content: center;*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .config_form .cocina{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+         width: 90%; 
+
+        width: 90%;
+        margin-left: 51%;
+        transform: translateX(-51%);
+         top: 75px;
+        left: 3px;
+        right: 1px; 
+         /* background-color: rgba(218, 165, 32, 0.6); */
+         background-color: rgba(218, 165, 32, 0.3);
+         height: 60px;  
+        /* min-height: 400px; */
+        justify-content: center;
+        /*margin-left: 5%;*/
+        position: absolute;
+        border: rgb(109, 179, 18) solid 2px;
+        border-radius: 5px;
+
+    }
+}
