@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TST_Grupo1</title>
-    <link rel="icon" type="image/x-icon" href="./img/Escudo_72.png" ALT="Logo MG Alarmas"> 
+    <link rel="icon" type="image/x-icon" href="" ALT="Logo ISPC"> 
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/mweb.css">
     <link rel="stylesheet" href="./css/m576.css">
@@ -27,12 +27,12 @@
 
 
 <!-------------------------- Body --------------------------------------->
-<body onload="">
+<body onload="actualizar_Timer()">
     <div class="container" id="conte">
         <!------------------------------ Header ------------------------------------------------->
         <header class="header">
             <nav class="nav">
-                <h1 class="mov">Sistema control de temepratura</h1>
+                <h1 class="mov">Sistema control PI</h1>
                 <button class="nav-toggle" id="nav-toggle"onclick="mi_Menu()" ALT="Menu de opciones">
                     <i class="fas fa-bars" aria-hidden="true"></i>
                 </button>
@@ -45,20 +45,86 @@
         <!-- -------------------------------------------------------------------------------------------- -->
         <!--      Comienza el tablero de muestra de las temepraturas                                      -->
         <!-- -------------------------------------------------------------------------------------------- -->
-                <form class="config_form" id="form_config" style="display: none;">
+                <form class="config_form" id="form_config">
+                    <div class="datos">
+                        <label id="DSEGClock-Year" class="Clock-Year-Front"></label>
+                    </div>
+
+
                     <div class="cocina">
+                        <div class="ambiente">
                         <label for="cocina" id="cocina" class="cocina_label">Cocina</label>
+                        </div>
+                        <div class="espacio">
+
+                        </div>
+                        <div class="tempa">
+                            <label for="cocina_tactual" class="labela">Temperatura actual =</label>
+                            <input type="text" class="inputA" id="cocina_tactual"value="34.9">
+                            <label for="cocina_tactual" class="labela">°C</label>
+                        </div>
+                        <div class="tempr">
+                            <label for="cocina_requerida" class="labelb">Temperatura requerida =</label>
+                            <input type="text" class="inputA" id="cocina_requerida" value="24.9">
+                            <label for="cocina_requerida" class="labelb">°C</label> 
+                        </div>  
+                        <div class="actua">  
+                            <label for="cocina_actuador" class="labelc">Uso actuador =</label>
+                            <input type="text" class="inputA" id="cocina_actuador" value="100">
+                            <label for="cocina_actuador" class="labelc">%</label>
+                        </div>
                     </div>
+
                     <div class="dormitorio">
+                        <div class="ambiente">
                         <label for="dormitorio" id="dormitorio" class="dormitorio_label">Dormitorio</label>
+                        </div>
+                        <div class="espacio">
+
+                        </div>
+                        <div class="tempa">
+                            <label for="dormitorio_tactual" class="labela">Temperatura actual =</label>
+                            <input type="text" class="inputB" id="dormitorio_tactual"value="24.9">
+                            <label for="dormitorio_tactual" class="labela">°C</label>
+                        </div>
+                        <div class="tempr">
+                            <label for="dormitorio_requerida" class="labelb">Temperatura requerida =</label>
+                            <input type="text" class="inputB" id="dormitorio_requerida" value="24.9">
+                            <label for="dormitorio_requerida" class="labelb">°C</label> 
+                        </div>  
+                        <div class="actua">  
+                            <label for="dormitorio_actuador" class="labelc">Uso actuador =</label>
+                            <input type="text" class="inputB" id="dormitorio_actuador" value="0">
+                            <label for="dormitorio_actuador" class="labelc">%</label>
+                        </div>
                     </div>
+
+
                     <div class="living">
+                        <div class="ambiente">
                         <label for="living" id="living" class="living_label">Living</label>
+                        </div>
+                        <div class="espacio">
+
+                        </div>
+                        <div class="tempa">
+                            <label for="living_tactual" class="labela">Temperatura actual =</label>
+                            <input type="text" class="inputB" id="living_tactual"value="26.1">
+                            <label for="living_tactual" class="labela">°C</label>
+                        </div>
+                        <div class="tempr">
+                            <label for="living_requerida" class="labelb">Temperatura requerida =</label>
+                            <input type="text" class="inputB" id="living_requerida" value="24.9">
+                            <label for="living_requerida" class="labelb">°C</label> 
+                        </div>  
+                        <div class="actua">  
+                            <label for="living_actuador" class="labelc">Uso actuador =</label>
+                            <input type="text" class="inputB" id="living_actuador" value="16">
+                            <label for="living_actuador" class="labelc">%</label>
+                        </div>
                     </div>
-                </form>
-
-
-
+                    <div class="espacio"></div>
+                    <!-- <div classs="espacio"></div> -->
         <!-- -------------------------------------------------------------------------------------------- -->
         <!--      Comienza acerca referencia a los participantes de este grupo de ispc                    -->
         <!-- -------------------------------------------------------------------------------------------- -->
