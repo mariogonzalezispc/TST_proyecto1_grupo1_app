@@ -1,0 +1,629 @@
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+    .header {
+        height: 60px;
+        z-index: 5;
+         /* background-color: rgb(148, 79, 79);  */
+        background-color: rgb(240, 151, 18); 
+    }
+
+    .mov {
+        font-size: 20px;
+        font-weight: 600;
+        color: navy; 
+        display: flex;
+        line-height: 65px;
+        margin-left: 4%;
+        position: absolute;
+    }
+
+
+    .nav-menu {
+        flex-direction: column;
+        margin-right: 10px;
+        /* background-color: #034574; */
+        background-color: #e00e0e;
+        position: fixed;
+        right: 0;
+        top: 58px;
+        width: 100%;
+        padding: 10px 0;
+        /* height: 120px; */
+        height: 90px;
+        /*calc(100%-30px);*/
+        overflow-y: auto;
+        right: -700px;
+        transition: 0.7s;
+
+    }
+
+    .nav-menu-link {
+        font-size: 20px;
+        margin-left: 5%;
+        line-height: 35px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .nav-menu-link:hover {
+        background-color: none;
+        transition: 0.5s;
+        color: white;
+    }
+
+    .nav-toggle {
+        margin-left: 85%;
+         color: black; 
+         /* border: 1px solid black;  */
+         border: transparent;
+         border-radius: 3px; 
+        background: none;
+        font-size: 25px;
+        padding: 0 15px;
+        line-height: 58px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .nav-menu__visible {
+        right: -10px;
+    }
+
+
+         .config_form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: (auto + 10%);
+        margin-left: 51%;
+        transform: translateX(-52%);
+        top: 14%;
+        left: 1%;
+        background-color: rgba(218, 165, 32, 0.3);
+        border-radius: 5px;
+        align-items: center;
+        border: red solid 2px;
+        /* margin-left: 6%; */
+        position: absolute;
+        user-select: none;
+    }
+
+
+    .config_form .datos{
+        display: block;
+        /* flex-direction: column; */
+        align-items: center;
+        width: 85%; 
+        margin-left: 51%;
+        transform: translateX(-30%);
+        margin-top: 6%;
+        /*margin-left: 2%;*/
+        right: 1px; 
+        background-color: rgba(218, 165, 32, 0.3);
+        height: 40px;  
+        justify-content: center;
+        position: relative;
+        border: rgb(196, 152, 10) solid 2px;
+        border-radius: 5px;
+        user-select: none;
+        line-height: 31px;
+
+    }
+    
+  
+/***********************************************************/
+/**** Cocina ***********************************************/
+/***********************************************************/
+    .config_form .cocina{
+        display: flex;
+        flex-direction: column; 
+        align-items: left;
+        width: 90%; 
+        margin-left: 51%;
+        transform: translateX(-28%);
+        margin-top: 6%;
+        /*margin-left: 2%;*/
+        right: 1px; 
+        background-color: rgba(218, 165, 32, 0.3);
+        /* height: 120px;   */
+        justify-content: center;
+        position: relative;
+        border: rgb(109, 179, 18) solid 2px;
+        border-radius: 5px;
+        user-select: none;
+    }
+
+    .config_form .cocina .cocina_label{
+        margin-top: 1%;
+        /* font-size: 18px;
+        line-height: 30px; */
+        /* color: red; */
+        user-select: none;
+        margin-left: 2%;
+        font-size: 20px;
+        font-weight: 600;
+        color: navy;
+    }
+    .ambiente{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        /* border: rgb(109, 179, 18) solid 2px; */ 
+    }
+    .espacio{
+        margin-top: 3%;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        /* border: rgb(109, 179, 18) solid 2px; */
+    }
+
+    .tempa{
+        /* border: rgb(109, 179, 18) solid 2px; */
+    }
+        .config_form .cocina .labela{
+            /* margin-top: 10%; */
+            margin-left: 1%;
+            width: 16px;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+        }    
+        .config_form .cocina .inputA{
+            background-color: transparent;
+            margin-left: 1%;
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+            border: none;
+        }
+
+        .tempr{
+            /* border: rgb(109, 179, 18) solid 2px; */
+        }
+            .config_form .cocina .labelb{
+                /* margin-top: 10%; */
+                margin-left: 1%;
+                width: 16px;
+                font-size: 16px;
+                line-height: 22px;
+                color: red;
+                user-select: none;
+            }    
+            .config_form .cocina .inputA{
+                background-color: transparent;
+                margin-left: 1%;
+                width: 40px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 22px;
+                color: red;
+                user-select: none;
+                border: none;
+            }
+           
+        .actua{
+            /* border: rgb(109, 179, 18) solid 2px; */
+        }
+            .config_form .cocina .labelc{
+                /* margin-top: 10%; */
+                margin-left: 1%;
+                width: 16px;
+                font-size: 16px;
+                line-height: 22px;
+                color: red;
+                user-select: none;
+            }    
+            .config_form .cocina .inputA{
+                background-color: transparent;
+                margin-left: 1%;
+                width: 40px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 22px;
+                color: red;
+                user-select: none;
+                border: none;
+            }
+
+  
+/***********************************************************/
+/**** dormitorio********************************************/
+/***********************************************************/
+.config_form .dormitorio{
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    width: 90%; 
+    margin-left: 51%;
+    transform: translateX(-28%);
+    margin-top: 6%;
+    /*margin-left: 2%;*/
+    right: 1px; 
+    background-color: rgba(218, 165, 32, 0.3);
+    /* height: 120px;   */
+    justify-content: center;
+    position: relative;
+    border: rgb(109, 179, 18) solid 2px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.config_form .dormitorio .dormitorio_label{
+    margin-top: 1%;
+    /* font-size: 18px;
+    line-height: 30px; */
+    /* color: red; */
+    user-select: none;
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    color: navy;
+}
+
+    .config_form .dormitorio .labela{
+        /* margin-top: 10%; */
+        margin-left: 1%;
+        width: 16px;
+        font-size: 16px;
+        line-height: 22px;
+        color: red;
+        user-select: none;
+    }    
+    .config_form .dormitorio .inputB{
+        background-color: transparent;
+        margin-left: 1%;
+        width: 40px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        color: red;
+        user-select: none;
+        border: none;
+    }
+
+        .config_form .dormitorio .labelb{
+            /* margin-top: 10%; */
+            margin-left: 1%;
+            width: 16px;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+        }    
+        .config_form .dormitorio .inputB{
+            background-color: transparent;
+            margin-left: 1%;
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+            border: none;
+        }
+       
+    .actua{
+        /* border: rgb(109, 179, 18) solid 2px; */
+    }
+        .config_form .dormitorio .labelc{
+            /* margin-top: 10%; */
+            margin-left: 1%;
+            width: 16px;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+        }    
+        .config_form .dormitorio .inputA{
+            background-color: transparent;
+            margin-left: 1%;
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+            border: none;
+        }
+
+
+/***********************************************************/
+/**** Living     *******************************************/
+/***********************************************************/
+.config_form .living{
+    display: flex;
+    flex-direction: column; 
+    align-items: left;
+    width: 90%; 
+    margin-left: 51%;
+    transform: translateX(-28%);
+    margin-top: 6%;
+    /*margin-left: 2%;*/
+    right: 1px; 
+    background-color: rgba(218, 165, 32, 0.3);
+    /* height: 120px;   */
+    justify-content: center;
+    position: relative;
+    border: rgb(109, 179, 18) solid 2px;
+    border-radius: 5px;
+    user-select: none;
+}
+
+.config_form .living .living_label{
+    margin-top: 1%;
+    /* font-size: 18px;
+    line-height: 30px; */
+    /* color: red; */
+    user-select: none;
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: 600;
+    color: navy;
+}
+
+    .config_form .living .labela{
+        /* margin-top: 10%; */
+        margin-left: 1%;
+        width: 16px;
+        font-size: 16px;
+        line-height: 22px;
+        color: red;
+        user-select: none;
+    }    
+    .config_form .living .inputB{
+        background-color: transparent;
+        margin-left: 1%;
+        width: 40px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 22px;
+        color: red;
+        user-select: none;
+        border: none;
+    }
+
+        .config_form .living .labelb{
+            /* margin-top: 10%; */
+            margin-left: 1%;
+            width: 16px;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+        }    
+        .config_form .living .inputB{
+            background-color: transparent;
+            margin-left: 1%;
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+            border: none;
+        }
+       
+    .actua{
+        /* border: rgb(109, 179, 18) solid 2px; */
+    }
+        .config_form .living .labelc{
+            /* margin-top: 10%; */
+            margin-left: 1%;
+            width: 16px;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+        }    
+        .config_form .living .inputA{
+            background-color: transparent;
+            margin-left: 1%;
+            width: 40px;
+            text-align: center;
+            font-size: 16px;
+            line-height: 22px;
+            color: red;
+            user-select: none;
+            border: none;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**************************************************************/
+    /*reloj********************************************************/
+
+
+
+    .lcd_ambientes{
+        max-width:95%;
+        line-height:120%;
+        color:#222;
+        font-family:Meiryo, 'Lucida Grande','Hiragino Kaku Gothic ProN', sans-serif;
+        user-select: none;
+        position: relative;
+        border:6px solid #000;
+        border-radius:9px;
+        height:80px;
+        margin-left: 3%;
+        margin-bottom: 2%;
+        background-color: yellow;
+        box-shadow: 4px 4px 28px 0px rgba(0,0,0,0.3) inset;  
+
+    }
+    
+    /*@font-face {
+      font-family: "D7MI";
+      /* src: url("/myfonts/DSEG7Modern-Italic.woff") format('woff');  
+      src: url("/Font/src/DSEG14Classic-Italic.woff") format('woff');
+    }*/
+    
+    @font-face {
+        font-family: 'D7MI';
+        src: url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2') format('woff2'),
+        url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.woff') format('woff'),
+        url('../fonts/DSEG7-Classic/DSEG7Classic-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+      }
+
+    @font-face {
+      font-family: "D14MI";
+      src: url("/myfonts/DSEG14Modern-Italic.woff") format('woff');
+    }
+    
+    @font-face {
+      font-family: "D7MBI";
+      src: url("/myfonts/DSEG7Modern-BoldItalic.woff") format('woff');
+    }
+    
+    @font-face {
+      font-family: "DWEATHER";
+      src: url("/myfonts/DSEGWeather.woff") format('woff');
+    }
+    
+    .D7MI {
+    font-family: "D7MI";
+    }
+    
+    .D7MBI {
+    font-family: "D7MBI";
+    }
+    
+    .D14MI {
+    font-family: "D14MI";
+    }
+    
+    .DWEATHER {
+    font-family: "DWEATHER";
+    font-size:72px;
+    height:72px;
+    }
+    
+    /* .Clock-Wrapper{
+        position: relative;
+        border:6px solid #000;
+        border-radius:9px;
+        height:80px;
+        width:98%;
+        margin-left: 3%;
+        margin-bottom: 2%;
+    /*	background-color:#fb7c00;
+        background-color:#66ac66;*/
+    /*    background-color: yellow;
+        box-shadow: 4px 4px 28px 0px rgba(0,0,0,0.3) inset;  
+    } */
+    
+    .Clock-Time-Background{
+        z-index:0;
+        color:rgba(0,0,0,0);
+    }
+    
+    .Clock-Time-Front{
+        z-index:0;
+        margin: 0px 10px; 
+    
+    }
+    
+    .Clock-Time-Background,.Clock-Time-Front {
+        position:absolute;
+        /* top:38px;
+        left:5px;  */
+        /* top:1%;
+        margin-left: 30%; */
+        font-size:18px;
+    }
+    
+
+
+
+    .Clock-Year-Background{
+        z-index:0;
+        color:rgba(0,0,0,0);
+        font-size:18px;
+    }
+    
+    .Clock-Year-Front{
+        z-index:0;
+        margin: 0px 10px;
+    }
+    
+    .Clock-Year-Background,.Clock-Year-Front {
+        position:absolute;
+        top:1%;
+        margin-left: 1%; 
+        font-size:18px;
+    }
+    
+    #DSEG7_OUTPUT{
+        font-family: "D7MI";
+    }
+    
+    #DSEG14_OUTPUT{
+        font-family: "D14MI";
+    }
+    
+    #DSEG14_OUTPUT, #DSEG7_OUTPUT{
+        font-size:18px;
+        margin-top:2px;
+        margin-bottom:10px;
+    }
+    
+
+
+
+}
