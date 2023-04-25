@@ -7,9 +7,11 @@
 }
 
 body {
+    background-image: url(C:\ISPC\TST\TST_proyecto1_grupo1\img\ISPC.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+     background-size: cover;
+    background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+    background-position: center;/*imagen de fondo centrada*/
     padding: 0px 0px 0px 0px;
 }
 
@@ -47,5 +49,6 @@ footer {
     margin-bottom: 0px;
     padding: 2px 0px 0px 0px;
     align-self: flex-end;
-    /* background-color: #daa52099; */
+    background-color: #daa52099; 
+
 }
