@@ -49,22 +49,6 @@ function mi_Menu() { //funcion para expandir o colapsar menu
         x[i].style.display = "flex";
     }
    }
-  //  document.getElementById("logo").addEventListener("click", function(){
-  //   const navMenu = document.querySelector(".nav-menu");
-  //       if (navMenu.style.right=="-10px") {
-  //         console.log("por aca pase");
-  //     x = document.querySelector('.logo');
-  //     for (i = 0; i < x.length; i++) {
-  //         x[i].style.display = "flex";
-  //     }
-  //   }else{}
-
-  //  });
-
-   function displayDate() {
-     document.getElementById("demo").innerHTML = Date();
-   }
-
 
   function mi_acerca() { //funcion para expandir o colapsar menu
     navMenu = document.querySelector(".nav-menu");
@@ -77,17 +61,37 @@ function mi_Menu() { //funcion para expandir o colapsar menu
 
 
   function borra() { //funcion para borrar contenido del form
-
     x = document.querySelectorAll('.config_form, .time, .cocina, .dormitorio, .living, .nosotros, .logo');
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-
  }
 
+ function borra_total() { //funcion para borrar contenido del form
+  x = document.querySelectorAll('.config_form, .time, .cocina, .dormitorio, .living, .nosotros, .logo');
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  x = document.querySelectorAll('.conte, .header, .logo, .config_form');
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+}
 
-
-
+function controlar_tamano(){
+       const relleno = matchMedia("(min-width: 576px)");
+       const veo = mql => {
+         if (mql.matches) {
+          x = document.querySelector('conte');
+          conte.style.display = "none";
+          borra_total();
+          // alert("detecte pantalla grande")
+         } else { }
+       }
+       /*-----------------------------------------------------------------------------*/
+       relleno.addListener(veo);
+       veo(relleno);
+      }
 
 
 
