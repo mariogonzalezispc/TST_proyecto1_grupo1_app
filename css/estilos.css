@@ -7,9 +7,9 @@
 }
 
 body {
-    background-image: url(C:\ISPC\TST\TST_proyecto1_grupo1\img\ISPC.png);
+    /* background-image: url(https://github.com/mariogonzalezispc/TST_proyecto1_grupo1_app/blob/master/img/ISPC-removebg-preview.png); */
     background-repeat: no-repeat;
-     background-size: cover;
+    background-size: cover;
     background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
     background-position: center;/*imagen de fondo centrada*/
     padding: 0px 0px 0px 0px;
