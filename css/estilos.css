@@ -60,7 +60,12 @@ footer {
     height: 190px; 
     border: rgb(109, 179, 18) solid 2px;
     user-select: none;  
-    background-image: url"(./img/ISPC-removebg-preview.png)";
+    background-image: url(https://github.com/mariogonzalezispc/TST_proyecto1_grupo1_app/blob/master/img/ISPC-removebg-preview.png);
+    background-size: cover;/*la imagen de fonndo abarca todo/
+    background-repeat: no-repeat;/*no se repita la imagen de fondo*/
+    background-attachment: fixed;/*para que se vea la imagen de fondo sea adj*/
+    background-position: center;/*imagen de fondo centrada*/
+    padding: 0px 0px 0px 0px;
 }
 
 .logo1  {
