@@ -2,19 +2,17 @@
 //funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
 //-----------------------------------------------------------------------------------
 function mi_Menu() { //funcion para expandir o colapsar menu
+  borra();
      const navMenu = document.querySelector(".nav-menu");
      if (navMenu.style.right=="-10px") {
      navMenu.style.right="-600px";
+     let x = document.querySelector('.logo');
+           logo.style.display = "flex";
      }else{
      navMenu.style.right="-10px";
      }
-  
-    borra();
+   //borra();
   }
-  x = document.querySelectorAll('.logo');
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "flex";
-  }  
 
   function mi_cocina() { //funcion para expandir o colapsar menu
     navMenu = document.querySelector(".nav-menu");
@@ -51,9 +49,21 @@ function mi_Menu() { //funcion para expandir o colapsar menu
         x[i].style.display = "flex";
     }
    }
+  //  document.getElementById("logo").addEventListener("click", function(){
+  //   const navMenu = document.querySelector(".nav-menu");
+  //       if (navMenu.style.right=="-10px") {
+  //         console.log("por aca pase");
+  //     x = document.querySelector('.logo');
+  //     for (i = 0; i < x.length; i++) {
+  //         x[i].style.display = "flex";
+  //     }
+  //   }else{}
 
+  //  });
 
-
+   function displayDate() {
+     document.getElementById("demo").innerHTML = Date();
+   }
 
 
   function mi_acerca() { //funcion para expandir o colapsar menu
@@ -102,22 +112,6 @@ function mi_Menu() { //funcion para expandir o colapsar menu
 //------------------------------------------------------------------------------------
 //declaracion de variable global
      var daylist = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
-    // (function(scope){ 
-    //         scope.$watch('msg', function(msg) {
-    //            if (typeof(msg.payload) != "undefined") $("#DSEGTemp").text(msg.payload);
-    //            if (typeof(msg.colour) != "undefined") 
-    //                         { 
-    //                          if (msg.colour=="orange"){ $(".Clock-Wrapper").css('background-color', '#fb7c00');  $(".lcdClock").css('color', '#222'); } 
-    //                          if (msg.colour=="green") { $(".Clock-Wrapper").css('background-color', '#66ac66');  $(".lcdClock").css('color', '#222'); }                            
-    //                          if (msg.colour=="blue")  { $(".Clock-Wrapper").css('background-color', '#8888ff');  $(".lcdClock").css('color', '#222'); }
-    //                          if (msg.colour=="yellow"){ $(".Clock-Wrapper").css('background-color', '#bbbb44');  $(".lcdClock").css('color', '#222'); } 
-    //                          if (msg.colour=="white") { $(".Clock-Wrapper").css('background-color', '#aaaaaa');  $(".lcdClock").css('color', '#222'); } 
-    //                          if (msg.colour=="pink")  { $(".Clock-Wrapper").css('background-color', '#ff8888');  $(".lcdClock").css('color', '#222'); } 
-    //                          if (msg.colour=="red")  { $(".Clock-Wrapper").css('background-color', '#aa2222');  $(".lcdClock").css('color', '#ccaa22'); } 
-    //                         }
-    //         });
-    // })(scope);
-
 
     function genTimerStrings(tm, num){
      	var i;
@@ -132,7 +126,6 @@ function mi_Menu() { //funcion para expandir o colapsar menu
     }
 
     function actualizar_Timer(){
-    	var ret;
     	var date = new Date();
     	var tm_year, tm_mon, tm_date, tm_hour, tm_min, tm_sec, tm_msec,tm_day, tm_sepa;
     	var colon;
@@ -152,7 +145,7 @@ function mi_Menu() { //funcion para expandir o colapsar menu
     	tm_day = daylist[tm_day];
       tm_sepa = "  ";
       colon = ':';
-     	document.getElementById("DSEGClock-Year").innerHTML = "<span class=\"D14MI\">"+ " - " + tm_day  + " - " +  "</span><span class=\"D7MI\">" + tm_date + "-" + tm_mon + "-" + tm_year + "</span><span class=\"D7MI\">" + "  -  "+ tm_hour + colon + tm_min +  colon +  tm_sec + "</span>";
+     	document.getElementById("DSEGClock-Year").innerHTML = "<span class=\"D14MI\">"+ "  " + tm_day  + "  " +  "</span><span class=\"D7MI\">" + tm_date + "-" + tm_mon + "-" + tm_year + "</span><span class=\"D7MI\">" + " -  "+ tm_hour + colon + tm_min +  colon +  tm_sec + "</span>";
       setTimeout("actualizar_Timer()", 500 - date.getMilliseconds()%500 );
     }
     actualizar_Timer();
