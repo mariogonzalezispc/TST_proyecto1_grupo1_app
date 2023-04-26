@@ -11,7 +11,10 @@ function mi_Menu() { //funcion para expandir o colapsar menu
   
     borra();
   }
-  
+  x = document.querySelectorAll('.logo');
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "flex";
+  }  
 
   function mi_cocina() { //funcion para expandir o colapsar menu
     navMenu = document.querySelector(".nav-menu");
@@ -65,7 +68,7 @@ function mi_Menu() { //funcion para expandir o colapsar menu
 
   function borra() { //funcion para borrar contenido del form
 
-    x = document.querySelectorAll('.config_form, .time, .cocina, .dormitorio, .living, .nosotros');
+    x = document.querySelectorAll('.config_form, .time, .cocina, .dormitorio, .living, .nosotros, .logo');
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }

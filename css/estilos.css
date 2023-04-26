@@ -52,3 +52,22 @@ footer {
     background-color: #daa52099; 
 
 }
+.logo  {
+    display: flex;
+    margin-top: 30%;
+    margin-left: 5%;
+    width: 90%;
+    height: 190px; 
+    border: rgb(109, 179, 18) solid 2px;
+    user-select: none;  
+    background-image: url"(./img/ISPC-removebg-preview.png)";
+}
+
+.logo1  {
+    display: block;
+    margin-top: 1%;
+    margin-left: 5%;
+    width: 90%;
+    height: 190px; 
+    user-select: none;
+}
