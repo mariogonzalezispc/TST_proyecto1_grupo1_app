@@ -52,6 +52,15 @@ footer {
     background-color: #daa52099; 
 
 }
+.container_no {
+    width: 100%;
+    height: 790px; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 2px 0px 0px 0px;
+    align-self: flex-end;
+    background-color: #da204f99; 
+}
 .logo  {
     display: flex;
     flex-direction: column; 
@@ -306,6 +315,7 @@ footer {
                 text-align: center;
                 font-size: 16px;
                 line-height: 22px;
+                font-weight: 600;
                 color: red;
                 user-select: none;
                 border: none;
@@ -589,6 +599,21 @@ footer {
 }
 
 
+.config_form .nosotros .integrantes{
+    background-color: transparent;
+    margin-top: 1%;
+    width: 90%;
+    /* font-size: 18px;
+    line-height: 30px; */
+    /* color: red; */
+    user-select: none;
+    margin-left: 2%;
+    font-size: 16px;
+    font-weight: 600;
+    color: navy;
+    border: none;
+    /* border: rgb(179, 18, 139) solid 1px; */
+}
 
 
 

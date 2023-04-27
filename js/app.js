@@ -79,18 +79,30 @@ function mi_Menu() { //funcion para expandir o colapsar menu
 }
 
 function controlar_tamano(){
-       const relleno = matchMedia("(min-width: 576px)");
+       const relleno = matchMedia("(min-width: 577px)");
        const veo = mql => {
          if (mql.matches) {
-          x = document.querySelector('conte');
-          conte.style.display = "none";
-          borra_total();
-          // alert("detecte pantalla grande")
-         } else { }
+          // let x = document.getElementById('conte');
+          // conte.style.display = "none";
+          // ///borra_total();
+          //  //alert("detecte pantalla grande")
+          //  x = document.getElementById('conte_no');
+          // conte_no.style.display = "flex";          
+         } else {
+
+          // let x = document.getElementById('conte');
+          // conte.style.display = "flex";
+          // ///borra_total();
+          //  //alert("detecte pantalla grande")
+          //  x = document.getElementById('conte_no');
+          // conte_no.style.display = "none";  
+
+          }
        }
        /*-----------------------------------------------------------------------------*/
        relleno.addListener(veo);
        veo(relleno);
+       console.log(veo)
       }
 
 
