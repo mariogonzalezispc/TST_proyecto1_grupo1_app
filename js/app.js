@@ -1,110 +1,108 @@
 //-----------------------------------------------------------------------------------
-//funcion DOM del sitio trabaja sobre el NAVBAR expandiendo o colapsando menu
+//funcion DOM del sitio 
 //-----------------------------------------------------------------------------------
-
-
 function controlar_tamano() {
-  //borra();
   var relleno = window.matchMedia("(max-width: 576px)");
   if (relleno.matches) {
-    // try {
-    // } catch (error) {}
+    try {
+  } catch (error) {}
 
-  } else {
-    borra();
-    /*-----------------------------------------------------------------*/
-    /* Creamos div de fondo del formulario e insertamos en el DOM      */
-    /*-----------------------------------------------------------------*/
-    const fondo = document.createElement('div'); //creamos div
-    fondo.id = 'fondo'; //establebecemos el id del div
-    fondo.className = 'baja_form baja'; //establecemos la clase del div para uso futuro
-    let parametros = //establecemos los parametros aspectos del div
-      "position: absolute;" +
-      "top: 5%;" +
-      "left: 2%;" +
-      "width: 95%;" +
-      "height: 90%;" +
-      "user-select: none;" +
-      "align-items: center;" +
-      "background-color: rgba(218, 165, 32, 0.3);" +
-      "border-radius: 10px;" +
-      "border: 2px solid red;" +
-      "justify-content: center;";
-    fondo.setAttribute('style', parametros);
-    document.body.appendChild(fondo); //este inserta el div en el body del HTML 
+} else {
+  borra();
+  /*-----------------------------------------------------------------*/
+  /* Creamos div de fondo del formulario e insertamos en el DOM      */
+  /*-----------------------------------------------------------------*/
+  const fondo = document.createElement('div'); //creamos div
+  fondo.id = 'fondo'; //establebecemos el id del div
+  fondo.className = 'baja_form baja'; //establecemos la clase del div para uso futuro
+  let parametros = //establecemos los parametros aspectos del div
+    "position: absolute;" +
+    "top: 5%;" +
+    "left: 2%;" +
+    "width: 95%;" +
+    "height: 90%;" +
+    "user-select: none;" +
+    "align-items: center;" +
+    "background-color: rgba(218, 165, 32, 0.3);" +
+    "border-radius: 10px;" +
+    "border: 2px solid red;" +
+    "justify-content: center;";
+  fondo.setAttribute('style', parametros);
+  document.body.appendChild(fondo); //este inserta el div en el body del HTML 
 
-    /*-----------------------------------------------------------------*/
-    const device = document.createElement('label'); //creamos label
-    device.id = 'titulo_device0'; //establecemos el id del label
-    device.className = 'titulo_device baja'; //establecemos la clase del label para uso futuro
-    let parametros_device = //establecemos los parametros aspectos del label
-      "position: absolute;" +
-      "top: 20%;" +
-      "left: 0%;" +
-      "width: 100%;" +
-      "height: 30%;" +
-      "user-select: none;" +
-      "color: red;" +
-      "font-family: 'Roboto', sans-serif;" +
-      "align-items: center;" +
-      "font-size: 50px;" +
-      "text-align: center;" +
-      "line-height: 28px;" +
-      "font-weight: bold;" +
-      "justify-content: center;" +
-      "background-color: transparent;";
-    device.setAttribute('style', parametros_device); //carga los estilos del label
-    device.innerHTML = "Este dispositivo NO es compatible con WEB";
-    fondo.appendChild(device); //este inserta el label en el button 
-    /*-----------------------------------------------------------------*/
-    const device1 = document.createElement('label'); //creamos label
-    device1.id = 'titulo_device1'; //establecemos el id del label
-    device1.className = 'titulo_device1 baja'; //establecemos la clase del label para uso futuro
-    let parametros_device1 = //establecemos los parametros aspectos del label
-      "position: absolute;" +
-      "top: 45%;" +
-      "left: 0%;" +
-      "width: 100%;" +
-      "height: 30%;" +
-      "user-select: none;" +
-      "color: red;" +
-      "font-family: 'Roboto', sans-serif;" +
-      "align-items: center;" +
-      "font-size: 50px;" +
-      "text-align: center;" +
-      "line-height: 28px;" +
-      "font-weight: bold;" +
-      "justify-content: center;" +
-      "background-color: transparent;";
-    device1.setAttribute('style', parametros_device1); //carga los estilos del label
-    device1.innerHTML = "utilice solo dispositivos Mobiles";
-    fondo.appendChild(device1); //este inserta el label en el button 
-        /*-----------------------------------------------------------------*/
-        const device2 = document.createElement('label'); //creamos label
-        device2.id = 'titulo_device2'; //establecemos el id del label
-        device2.className = 'titulo_device2 baja'; //establecemos la clase del label para uso futuro
-        let parametros_device2 = //establecemos los parametros aspectos del label
-          "position: absolute;" +
-          "top: 70%;" +
-          "left: 0%;" +
-          "width: 100%;" +
-          "height: 30%;" +
-          "user-select: none;" +
-          "color: red;" +
-          "font-family: 'Roboto', sans-serif;" +
-          "align-items: center;" +
-          "font-size: 50px;" +
-          "text-align: center;" +
-          "line-height: 28px;" +
-          "font-weight: bold;" +
-          "justify-content: center;" +
-          "background-color: transparent;";
-        device2.setAttribute('style', parametros_device2); //carga los estilos del label
-        device2.innerHTML = "TST Grupo1 Cohorte 2022";
-        fondo.appendChild(device2); //este inserta el label en el button 
-  }
-
+  /*-----------------------------------------------------------------*/
+  const device = document.createElement('label'); //creamos label
+  device.id = 'titulo_device0'; //establecemos el id del label
+  device.className = 'titulo_device baja'; //establecemos la clase del label para uso futuro
+  let parametros_device = //establecemos los parametros aspectos del label
+    "position: absolute;" +
+    "top: 20%;" +
+    "left: 0%;" +
+    "width: 100%;" +
+    "height: 33%;" +
+    "user-select: none;" +
+    "color: red;" +
+    "font-family: 'Roboto', sans-serif;" +
+    "align-items: center;" +
+    "font-size: 50px;" +
+    "text-align: center;" +
+    "line-height: 28px;" +
+    "font-weight: bold;" +
+    "justify-content: center;" +
+    "background-color: transparent;";
+  device.setAttribute('style', parametros_device); //carga los estilos del label
+  device.innerHTML = "Esta APP no es compatible con WEB";
+  fondo.appendChild(device); //este inserta el label en el button 
+  /*-----------------------------------------------------------------*/
+  const device1 = document.createElement('label'); //creamos label
+  device1.id = 'titulo_device1'; //establecemos el id del label
+  device1.className = 'titulo_device1 baja'; //establecemos la clase del label para uso futuro
+  let parametros_device1 = //establecemos los parametros aspectos del label
+    "position: absolute;" +
+    "top: 45%;" +
+    "left: 0%;" +
+    "width: 100%;" +
+    "height: 33%;" +
+    "user-select: none;" +
+    "color: red;" +
+    "font-family: 'Roboto', sans-serif;" +
+    "align-items: center;" +
+    "font-size: 50px;" +
+    "text-align: center;" +
+    "line-height: 28px;" +
+    "font-weight: bold;" +
+    "justify-content: center;" +
+    "background-color: transparent;";
+  device1.setAttribute('style', parametros_device1); //carga los estilos del label
+  device1.innerHTML = "utilice solo dispositivos Mobiles";
+  fondo.appendChild(device1); //este inserta el label en el button 
+  /*-----------------------------------------------------------------*/
+  const device2 = document.createElement('label'); //creamos label
+  device2.id = 'titulo_device2'; //establecemos el id del label
+  device2.className = 'titulo_device2 baja'; //establecemos la clase del label para uso futuro
+  let parametros_device2 = //establecemos los parametros aspectos del label
+    "position: absolute;" +
+    "top: 70%;" +
+    "left: 0%;" +
+    "width: 100%;" +
+    "height: 33%;" +
+    "user-select: none;" +
+    "color: red;" +
+    "font-family: 'Roboto', sans-serif;" +
+    "align-items: center;" +
+    "font-size: 50px;" +
+    "text-align: center;" +
+    "line-height: 28px;" +
+    "font-weight: bold;" +
+    "justify-content: center;" +
+    "background-color: transparent;";
+  device2.setAttribute('style', parametros_device2); //carga los estilos del label
+  device2.innerHTML = "TST Grupo1 Cohorte 2022";
+  fondo.appendChild(device2); //este inserta el label en el button 
 }
+}
+
+
 
 
 
