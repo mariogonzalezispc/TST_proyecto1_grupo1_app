@@ -751,3 +751,19 @@ footer {
 
 
 }
+
+
+/*--------------------------------------------------------------*/
+/*Responsive para celulares 576px */
+/*--------------------------------------------------------------*/
+@media screen and (min-width: 577px) {
+    .header {
+        display: none;
+    }
+    .mov {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+}
