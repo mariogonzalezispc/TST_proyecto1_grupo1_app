@@ -51,7 +51,7 @@ function controlar_tamano() {
     "justify-content: center;" +
     "background-color: transparent;";
   device.setAttribute('style', parametros_device); //carga los estilos del label
-  device.innerHTML = "Esta APP no es compatible con WEB";
+  device.innerHTML = "Esta APP no es WEB";
   fondo.appendChild(device); //este inserta el label en el button 
   /*-----------------------------------------------------------------*/
   const device1 = document.createElement('label'); //creamos label
@@ -74,7 +74,7 @@ function controlar_tamano() {
     "justify-content: center;" +
     "background-color: transparent;";
   device1.setAttribute('style', parametros_device1); //carga los estilos del label
-  device1.innerHTML = "utilice solo dispositivos Mobiles";
+  device1.innerHTML = "utilice dispositivos Mobiles";
   fondo.appendChild(device1); //este inserta el label en el button 
   /*-----------------------------------------------------------------*/
   const device2 = document.createElement('label'); //creamos label

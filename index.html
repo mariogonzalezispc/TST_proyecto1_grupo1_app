@@ -131,6 +131,13 @@
                             <input type="text" class="inputB" id="living_actuador" value="16">
                             <label for="living_actuador" class="labelc">%</label>
                         </div>
+ 
+                        <div class="sclicer3">  
+                            <div id="slider" class="slider">
+                                <div class="thumb"></div>
+                              </div>
+                        </div>
+
                     </div>
 
 
@@ -202,5 +209,52 @@
         </div>
     </dir> -->
                 <script src="./js/app.js"></script>
+                
+
+                <script>
+                    let thumb = slider.querySelector('.thumb');
+                    let shiftX;
+                  
+                    function onThumbDown(event) {
+                      event.preventDefault(); // evita el inicio de la selección (acción del navegador)
+                  
+                      shiftX = event.clientX - thumb.getBoundingClientRect().left;
+                  
+                      thumb.setPointerCapture(event.pointerId);
+                  
+                      thumb.onpointermove = onThumbMove;
+                  
+                      thumb.onpointerup = event => {
+                        // arrastre finalizado, no se necesita seguir rastreando el puntero
+                        // ... toda otra lógica de finalización de arrastre aquí...
+                        thumb.onpointermove = null;
+                        thumb.onpointerup = null;
+                      }
+                    };
+                  
+                    function onThumbMove(event) {
+                      let newLeft = event.clientX - shiftX - slider.getBoundingClientRect().left;
+                  
+                      // si el puntero está fuera del slider => ajustar "izquierda" para que esté dentro de los límites
+                      if (newLeft < 0) {
+                        newLeft = 0;
+                      }
+                      let rightEdge = slider.offsetWidth - thumb.offsetWidth;
+                      if (newLeft > rightEdge) {
+                        newLeft = rightEdge;
+                      }
+                  
+                      thumb.style.left = newLeft + 'px';
+                    };
+                  
+                    thumb.onpointerdown = onThumbDown;
+                  
+                    thumb.ondragstart = () => false;
+                  
+                  </script>
+
+
+
+
 </body>
 </html>
