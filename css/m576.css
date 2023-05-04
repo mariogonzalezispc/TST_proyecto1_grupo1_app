@@ -517,8 +517,8 @@ footer {
         line-height: 22px;
         color: red;
         user-select: none;
-        border:  black solid 2px;
-        border-radius: 5px;
+        /* border:  black solid 2px;
+        border-radius: 5px; */
     }
 
     .config_form .living .inputB {
